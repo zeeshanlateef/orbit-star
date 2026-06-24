@@ -1,0 +1,6 @@
+.agents/
+.gemini/
+*.log
+*.exe
+portable-git.exe
+git-portable/

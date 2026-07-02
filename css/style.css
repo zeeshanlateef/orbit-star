@@ -1063,6 +1063,73 @@ a {
 }
 
 /* ================== CONTACT SECTION ================== */
+/* Contact Info Panel (used in orbit-star-contact.html) */
+.contact-info-panel {
+    transition: var(--transition-fast);
+}
+
+.contact-info-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 1.5rem;
+    background-color: var(--bg-light);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.contact-info-text {
+    flex: 1;
+    min-width: 0; /* Enable text wrapping in flex container */
+}
+
+.contact-info-text a, 
+.contact-info-text p,
+.info-card a, 
+.info-card p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+/* Responsive adjustments for Contact Info cards (below 1400px) */
+@media (max-width: 1399.98px) {
+    .contact-info-panel {
+        padding: 2.5rem 1.4rem !important; /* Reduce padding from 2rem to 1.4rem */
+    }
+    .contact-info-icon {
+        width: 50px !important;
+        height: 50px !important;
+        margin-right: 1rem !important;
+    }
+    .contact-info-icon i {
+        font-size: 1.2rem !important; /* Scale down the icon size */
+    }
+    .info-card {
+        padding: 20px !important;
+    }
+    .info-card .icon {
+        width: 45px !important;
+        height: 45px !important;
+        margin-right: 15px !important;
+    }
+    .contact-links li a[href^="mailto:"] {
+        font-size: 0.85rem; /* Make it slightly smaller to fit on laptop footers */
+    }
+}
+
+/* Align footer email icon and link in the same line */
+.contact-links li a[href^="mailto:"] {
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-links li a[href^="mailto:"] i {
+    margin-top: 0;
+}
+
 .info-card {
     display: flex;
     align-items: flex-start;
